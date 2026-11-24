@@ -1,0 +1,34 @@
+{
+  "skill": "gameplay-video-editor",
+  "example_only": true,
+  "source_id": "example-recording.mkv",
+  "source_duration": 100,
+  "output_duration": 20,
+  "stage": "edit_ready",
+  "events": [
+    {
+      "id": "E1",
+      "source_in": 25,
+      "source_out": 28,
+      "type": "gameplay",
+      "verified": true,
+      "evidence": [
+        {
+          "kind": "hud",
+          "description": "仅为示例：结果提示待真实素材确认"
+        }
+      ]
+    }
+  ],
+  "clips": [
+    {
+      "event_id": "E1",
+      "source_in": 20,
+      "source_out": 40,
+      "start": 0,
+      "end": 20,
+      "speed": 1,
+      "replay": false
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-24",
+  "skill": "gameplay-video-editor",
+  "version": "2.0",
+  "baseline_commit": "484d7556ce05c3caab6f79a12f2918e9a2258523",
+  "owns": "从真实游戏录像中找到有上下文的高光，保留玩家语音、HUD证据和结果，剪辑为可追溯集锦。",
+  "does_not_own": "不编写攻略事实、不剪电影剧情、不让新生成镜头伪装真实操作，不把叫声或画面变化直接判胜负。",
+  "admission_rule": "录制分轨、可回放剪辑、时序合成或自动候选定位的开放许可项目；下载/自动上传器不作高光判断器。",
+  "ranking_scope": "GitHub Repository Search（每查询按stars降序取前50项）+ 定向核查知名相关项目；按本技能职责与许可/维护状态筛选后，在本次候选池内按实际stars排序取五项。不是对全GitHub的穷尽排名，也不是文学/视觉/视频质量排行榜。",
+  "queries": [
+    {
+      "q": "automatic video editing",
+      "total_count": 636,
+      "incomplete_results": false,
+      "fetched_items": 50
+    },
+    {
+      "q": "gameplay highlights",
+      "total_count": 388,
+      "incomplete_results": false,
+      "fetched_items": 50
+    }
+  ],
+  "targeted_candidates": [
+    "obsproject/obs-studio",
+    "FFmpeg/FFmpeg",
+    "Zulko/moviepy",
+    "WyattBlue/auto-editor",
+    "Breakthrough/PySceneDetect"
+  ],
+  "sources": [
+    {
+      "rank_in_admitted_candidates": 1,
+      "repository": "obsproject/obs-studio",
+      "url": "https://github.com/obsproject/obs-studio",
+      "stars_snapshot": 80015,
+      "commit": "0c790bd0151fb9f574867e025ecf57e6eedc58e2",
+      "license": "GPL-2.0",
+      "archived": false,
+      "source_kind": "project or supporting component; not a complete replacement for this skill",
+      "review_scope": "Root README and LICENSE, relevant topical sections; public descriptions treated as capability claims, not performance evidence. No external code executed.",
+      "retrieved_materials": [
+        {
+          "path": "README.rst",
+          "sha256": "be2dff0124620dcd9d8d83ef9084b12d1e61e896d3295232501cb3ebd3f6a318",
+          "bytes": 3139
+        },
+        {
+          "path": "COPYING",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+          "bytes": 18092
+        }
+      ],
+      "focus": "捕获与独立音轨",
+      "adapted_for_this_skill": "尽可能保留游戏、麦克风等轨道和原始录制，不因后期混音丢失玩家语音"
+    },
+    {
+      "rank_in_admitted_candidates": 2,
+      "repository": "FFmpeg/FFmpeg",
+      "url": "https://github.com/FFmpeg/FFmpeg",
+      "stars_snapshot": 68041,
+      "commit": "d332cdafecf141e6d9c2de4f18b8b5f3891d81fc",
+      "license": "LGPL-2.1-or-later baseline; optional GPL/nonfree build flags change obligations (see LICENSE.md)",
+      "archived": false,
+      "source_kind": "project or supporting component; not a complete replacement for this skill",
+      "review_scope": "Root README and LICENSE, relevant topical sections; public descriptions treated as capability claims, not performance evidence. No external code executed.",
+      "retrieved_materials": [
+        {
+          "path": "README.md",
+          "sha256": "86474c8f0806772f831a9c7a4982fd2398507372c577d229b76f60bbb3e7dead",
+          "bytes": 2026
+        },
+        {
+          "path": "LICENSE.md",
+          "sha256": "e6dc72d5665a1ebd6dcc841de59278dad4ca77ecc47b03f1064a55c3e9ea8bb8",
+          "bytes": 4352
+        }
+      ],
+      "focus": "媒体探测、剪切与音视频时序",
+      "adapted_for_this_skill": "记录源片PTS/起止与变速，输出解码验证不能只看容器存在"
+    },
+    {
+      "rank_in_admitted_candidates": 3,
+      "repository": "Zulko/moviepy",
+      "url": "https://github.com/Zulko/moviepy",
+      "stars_snapshot": 15198,
+      "commit": "211e4b15f6ce4f34a6a9efbfff40590e43a68f77",
+      "license": "MIT",
+      "archived": false,
+      "source_kind": "project or supporting component; not a complete replacement for this skill",
+      "review_scope": "Root README and LICENSE, relevant topical sections; public descriptions treated as capability claims, not performance evidence. No external code executed.",
+      "retrieved_materials": [
+        {
+          "path": "README.md",
+          "sha256": "34b932b6bb7320500bd1c1693ba615482f576672ea72a205eb017529cc714120",
+          "bytes": 5004
+        },
+        {
+          "path": "LICENCE.txt",
+          "sha256": "05ecc6144af83d1b87b64f3e36f4367349ac4486afbf29e57341b7c4745dd38a",
+          "bytes": 1071
+        }
+      ],
+      "focus": "可编程组合与时间操作",
+      "adapted_for_this_skill": "源时间、成片位置、速率和回放分开，避免多次使用同片段被算成多个事件"
+    },
+    {
+      "rank_in_admitted_candidates": 4,
+      "repository": "WyattBlue/auto-editor",
+      "url": "https://github.com/WyattBlue/auto-editor",
+      "stars_snapshot": 6095,
+      "commit": "3841cc93f6196be01eac268bacae16452ff5aeac",
+      "license": "Unlicense",
+      "archived": false,
+      "source_kind": "project or supporting component; not a complete replacement for this skill",
+      "review_scope": "Root README and LICENSE, relevant topical sections; public descriptions treated as capability claims, not performance evidence. No external code executed.",
+      "retrieved_materials": [
+        {
+          "path": "README.md",
+          "sha256": "16d6e54f564302f0177522cadd5b43ce4f42d106b969f3a72b5ee1df6a114387",
+          "bytes": 4503
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "ca2abdf695884c77ea4b4a5b64ca7b732d9d9dbade4eebc1c2e76c53e9e3bc83",
+          "bytes": 1210
+        }
+      ],
+      "focus": "音量/运动筛选候选",
+      "adapted_for_this_skill": "静音不等于无价值，音量大不等于高光；保留准备和结果再人工核认"
+    },
+    {
+      "rank_in_admitted_candidates": 5,
+      "repository": "Breakthrough/PySceneDetect",
+      "url": "https://github.com/Breakthrough/PySceneDetect",
+      "stars_snapshot": 5638,
+      "commit": "a696070d1a30d81b35ba9aff89de50eb80696f04",
+      "license": "BSD-3-Clause",
+      "archived": false,
+      "source_kind": "project or supporting component; not a complete replacement for this skill",
+      "review_scope": "Root README and LICENSE, relevant topical sections; public descriptions treated as capability claims, not performance evidence. No external code executed.",
+      "retrieved_materials": [
+        {
+          "path": "README.md",
+          "sha256": "df97aa4880898bf7f210b69e90b15a39676ff21dc76e33f180082a75dbcb9dfa",
+          "bytes": 7772
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "e855ca89e457a7d0b6b7c92ad475d1120a9a5b5bf4e5048c706b1b3889fbc349",
+          "bytes": 1505
+        }
+      ],
+      "focus": "镜头/画面变化定位",
+      "adapted_for_this_skill": "检测仅产候选，结合HUD与操作结果解释，不用切镜数代替精彩程度"
+    }
+  ],
+  "excluded_or_not_top_five": [
+    "下载器、自动上传器、影视剧情解说和纯音频剪静音不等同游戏事件理解；候选分数不作为胜负或高光事实。",
+    "VideoHighlighter（505 stars）属于补充候选；录制、转码和切镜工具均只支撑对应环节，不声称它们能独立判定精彩。"
+  ],
+  "reuse_policy": "Only independently restated methods and project capability boundaries are integrated. No upstream code, templates, models or weights are vendored; no model installation, API call, commercial service or content publication is performed by this research."
+}
